@@ -2,13 +2,14 @@ const Header = props => {
     const { nameCommunity, contactUsText } = props
     return (
 
-        <div className="font-bold text-3xl bg-black text-white flex justify-around items-center p-5">
+        <div className="font-bold text-3xl bg-black text-white justify-around items-center p-5 gap-5
+        grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1">
 
-            <div className="rounded-full p-5 bg-red-400">
+            <div className="rounded-full p-5 text-center bg-red-400">
                 logo
             </div>
             <p>{nameCommunity}</p>
-            <a href="#_" class="relative inline-block px-4 py-2 font-medium group">
+            <a href="#_" class="relative inline-block px-4 py-2 font-medium group w-fit">
                 <span class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                 <span class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
                 <span class="relative text-black group-hover:text-white flex items-center gap-2">
