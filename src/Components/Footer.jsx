@@ -4,9 +4,9 @@ import VTESLink from "./VTESLink"
 const Footer = () => {
 
     return (
-        <div className=" bg-black bg-opacity-90 p-10 grid  justify-items-center
-        grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 ">
-            <div className=" p-2">
+        <div className=" bg-black bg-opacity-90 p-10 grid  justify-items-center pb-8
+         2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 ">
+            <div className="">
                 <VTESLink
                     textWeb="Crea tus mazos"
                     urlWeb="https://vtesdecks.com/"

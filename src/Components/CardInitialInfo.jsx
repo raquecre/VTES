@@ -1,17 +1,32 @@
+import React, { useState } from 'react';
+
+
 const CardInitialInfo = props => {
-    const { title } = props
+    const { title, urlImage, description } = props;
+    const [isOpen, setIsOpen] = useState(false)
+
+    function showDescription() {
+        isOpen === false ? setIsOpen(true) : setIsOpen(false)
+
+    }
+
+
     return (
-        <div className=" flex items-center gap-1 bg-white rounded-xl p-2 m-4">
 
-
-            
-            <p className="font-semibold text-2xl">  {title}  </p>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
-            </svg>
-
-
+        <div class="relative flex justify-center items-center m-3 
+        sm:flex-col xs:flex-col lg:flex-col"
+            onClick={() => setTimeout(showDescription(), 5000)}>
+            <img className="hover:blur-sm ease-in duration-300 object-cover w-[1000px] h-[350px] rounded-xl" src={urlImage} alt="background" />
+            <div class="absolute bg-black/40 p-5 rounded-xl object-cover  ">
+                <p class="text-white font-semibold text-4xl "> {title} </p>
+               
+                {isOpen &&
+                    <div className='ease-in duration-300 text-white text-xl scroll-auto m-5'> {description} </div>}
+            </div>
         </div>
+
+
+
     )
 }
 
