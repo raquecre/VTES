@@ -7,8 +7,8 @@ import Faqs from "../Components/Faqs"
 const Home = () => {
 
     return (
-        <div className="bg-gradient-to-r from-emerald-800 to-teal-800 ">
-            <Header nameCommunity="Comunidad VTES La Guarida" contactUsText="Escríbenos" />
+        <div className="bg-gradient-to-r from-emerald-800 to-teal-800 bg-fixed ">
+            <Header nameCommunity="comunidad VTES Madrid" contactUsText="Escríbenos" />
             <Faqs />
             <Calendar />
             <MeetingPlaces />
