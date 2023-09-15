@@ -1,8 +1,8 @@
-import Calendar from "./Calendar"
-import Header from "./Header"
-import MeetingPlaces from "./MeetingPlaces"
-import Footer from "./Footer"
-import Faqs from "./Faqs"
+import Calendar from "../Components/Calendar"
+import Header from "../Components/Header"
+import MeetingPlaces from "../Components/MeetingPlaces"
+import Footer from "../Components/Footer"
+import Faqs from "../Components/Faqs"
 
 const Home = () => {
 
