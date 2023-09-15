@@ -2,7 +2,7 @@ const Header = props => {
     const { nameCommunity, contactUsText } = props
     return (
 
-        <div className="font-bold text-3xl bg-gray-900 text-white  gap-5
+        <div className="font-bold text-4xl bg-black text-white  gap-5
         grid  justify-items-center items-center
         2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1">
 
@@ -10,7 +10,7 @@ const Header = props => {
              grid items-center gap-5">
                 <img src="https://i.imgur.com/jZVFkpm.png" alt="ttes guarida logo" />
             </div>
-            <p>{nameCommunity}</p>
+            <p className="text-5xl">{nameCommunity}</p>
             <a href="/" class="relative inline-block px-4 py-2 font-medium group w-fit">
                 <span class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                 <span class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>

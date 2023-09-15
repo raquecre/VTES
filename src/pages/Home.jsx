@@ -8,7 +8,7 @@ const Home = () => {
 
     return (
         <div className="bg-gradient-to-r from-emerald-800 to-teal-800 ">
-            <Header nameCommunity="comunidad San Pato" contactUsText="Escríbenos" />
+            <Header nameCommunity="Comunidad VTES La Guarida" contactUsText="Escríbenos" />
             <Faqs />
             <Calendar />
             <MeetingPlaces />
