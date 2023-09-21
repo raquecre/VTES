@@ -7,8 +7,8 @@ const Faqs = props => {
          2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 ">
             <CardInitialInfo title="¿Qué es VTES?"
                 urlImage="https://c4.wallpaperflare.com/wallpaper/952/300/55/vampire-the-masquerade-coteries-of-new-york-new-york-city-gangrel-hd-wallpaper-preview.jpg"
-                description="Se trata de un juego de cartas multijugador (5 personas). 
-                Los Matusalenes compiten por hacer perdurar su estirpe frente a los otros. 
+                description="Es un juego de cartas para 5 personas que te permite imprimir aquellas que no tienes.
+                Los Matusalenes compiten porimponerse frente a los otros. 
                 Para conseguirlo, cada Matusalén se apoyará de una cripta con vampiros para poder desarrollar las acciones en mesa, contando con herramientas de apoyo que se las otorgará el mazo de biblioteca.  "
             />
 
