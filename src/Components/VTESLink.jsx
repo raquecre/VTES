@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 
 const VTESLink = props => {
-    const { urlWeb, infoWeb, titleWeb, } = props
-    const { title, urlImage, description } = props;
+    const { urlWeb, infoWeb, titleWeb, preInfo, urlImage} = props
+
 
     const [isOpen, setIsOpen] = useState(false)
 
@@ -18,19 +18,20 @@ const VTESLink = props => {
         /*   <Link to={urlWeb} target="_blank"></Link> */
 
         <div
-        data-aos="zoom-in-right"
+            data-aos="zoom-in-right"
             data-aos-duration="1500"
             /* data-aos="zoom-in-right"
             data-aos-duration="1500"
  */
             onClick={() => setTimeout(showDescription(), 5000)}
-            className="  relative flex justify-center items-center "
+            className=" text-white relative flex justify-center items-center "
         >
             <img className={[isOpen ? 'addBlur' : 'deleteBlur']} src={urlImage} alt="" />
 
             <div className="absolute bg-black/70 rounded-xl object-cover p-3">
 
-                <h3 className="text-white font-semibold hover:text-4xl duration-300 text-3xl"> {titleWeb} </h3>
+                <h3 className=" font-semibold hover:text-4xl duration-300 text-3xl"> {titleWeb} </h3>
+                <p className=' text-sm'>{preInfo}</p>
                 {isOpen &&
                     <div className='ease-in duration-300 text-white scroll-auto text-left'>
                         <p className='text-lg '>
@@ -39,7 +40,7 @@ const VTESLink = props => {
                         <Link target='_blank' to={urlWeb}
                             className='underline text-blue-600 text-right text-xl
                             hover:decoration-double hover:text-blue-800'
-                            >
+                        >
                             {titleWeb}
                         </Link>
                     </div>}
