@@ -24,7 +24,7 @@ node {
 
   stage('deploy') {
     image.withRun('-p 3001:3000' +
-                  '-v .:/vtes-app'
+                  '-v .:/vtes-app' +
                  '--name vtes-react')
     
   }
