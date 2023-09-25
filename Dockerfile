@@ -1,4 +1,4 @@
-FROM node:18.16.1-alpine
+FROM node:18.16.1-alpine as builder
 WORKDIR /vtes-app
 COPY package.json .
 COPY package-lock.json .
