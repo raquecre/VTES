@@ -1,7 +1,7 @@
 FROM node:18.16.1-alpine
-RUN echo ls
+RUN echo $(ls)
 WORKDIR /vtes-app
-RUN echo ls
+RUN echo $(ls)
 COPY package.json .
 COPY package-lock.json .
 COPY . .
