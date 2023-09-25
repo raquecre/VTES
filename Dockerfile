@@ -2,13 +2,16 @@ FROM node:18.16.1-alpine as builder
 WORKDIR /app
 COPY package.json .
 COPY package-lock.json .
-COPY . .
+
 RUN npm install
 RUN npm install react-scripts@5.0.1 -g --silent
-CMD ["npm", "start"]
+COPY . .
+RUN npm run build
 
 FROM bitnami/nginx:1.24.0
 WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
-COPY --from=builder /app/build .
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
+COPY --from=build /app/build /usr/share/nginx/html
+COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 3000
+CMD ["nginx", "-g", "daemon off;"]
