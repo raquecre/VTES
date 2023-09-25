@@ -1,4 +1,4 @@
-from node:18.16.1-alpine
+FROM node:18.16.1-alpine
 RUN mkdir /vtes-app
 WORKDIR /vtes-app
 COPY package.json ./
