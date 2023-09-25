@@ -16,7 +16,7 @@ node {
   }
 
   stage('build image') {
-   sh "docker build -t ${image_name} ."
+   sh "docker build --progress=plain --no-cache -t ${image_name} ."
   }
 
   stage('deploy') {
