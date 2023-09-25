@@ -1,5 +1,4 @@
 FROM node:18.16.1-alpine
-RUN echo $(ls)
 WORKDIR /vtes-app
 RUN echo $(ls)
 COPY package.json .
