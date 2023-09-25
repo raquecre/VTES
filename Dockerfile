@@ -4,6 +4,7 @@ COPY package.json .
 COPY package-lock.json .
 COPY . .
 RUN echo $(pwd)
-RUN npm install --silent
+RUN echo $(ls)
+RUN npm install
 RUN npm install react-scripts@5.0.1 -g --silent
 CMD ["npm", "start"]
