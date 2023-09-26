@@ -8,8 +8,8 @@ node {
 
   stage('remove old image') {
     try {
-      sh "docker stop ${container_name}"
-      sh "docker rm ${container_name}"  
+      sh "docker stop $(docker ps -a -q --filter name=${container_name})"
+      sh "docker rm $(docker ps -a -q --filter name=${container_name})"  
       sh "docker rmi ${image_name}"
     } catch (Exception e) {
       echo e.getMessage()
@@ -22,5 +22,9 @@ node {
 
   stage('deploy') {
     sh "docker-compose up -d vtesreact"
+  }
+
+  stage('clean images') {
+    sh "docker image prune -fa"
   }
 }
