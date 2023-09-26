@@ -8,8 +8,8 @@ node {
 
   stage('remove old image') {
     try {
-      sh "docker stop $(docker ps -a -q --filter name=${container_name})"
-      sh "docker rm $(docker ps -a -q --filter name=${container_name})"  
+      sh "docker stop \$(docker ps -a -q --filter name=${container_name})"
+      sh "docker rm \$(docker ps -a -q --filter name=${container_name})"  
       sh "docker rmi ${image_name}"
     } catch (Exception e) {
       echo e.getMessage()
