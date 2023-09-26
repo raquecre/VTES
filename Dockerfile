@@ -9,7 +9,7 @@ RUN npm install react-scripts@5.0.1 -g --silent
 COPY . .
 RUN echo $(ls -1 /app)
 RUN npm run build
-RUN echo $(ls -1 /app)
+RUN echo $(ls -1 /app/build)
 
 FROM nginx:stable-alpine
 COPY --from=builder /app/build /usr/share/nginx/html
