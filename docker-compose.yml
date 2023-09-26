@@ -3,7 +3,9 @@ version: '3.8'
 services:
   vtesreact:
     container_name: vtes-react
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile
     ports:
       - 3001:80
     
