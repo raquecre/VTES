@@ -1,5 +1,6 @@
 node {
-  def image_name = "vtesreactimage"
+  def image_name = "vtes-react-image"
+  def container_name = "vtes-react"
 
   stage('checkout') {
     checkout scm
@@ -7,8 +8,8 @@ node {
 
   stage('remove old image') {
     try {
-      sh "docker stop ${image_name}"
-      sh "docker rm ${image_name}"  
+      sh "docker stop ${container_name}"
+      sh "docker rm ${container_name}"  
       sh "docker rmi ${image_name}"
     } catch (Exception e) {
       echo e.getMessage()
