@@ -21,7 +21,7 @@ node {
   }
 
   stage('deploy') {
-    sh "docker-compose up -d vtesreact"
+    sh "docker compose up -d vtesreact"
   }
 
   stage('clean images') {
