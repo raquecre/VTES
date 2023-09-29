@@ -12,6 +12,7 @@ node {
       sh "docker stop \$(docker ps -a -q --filter name=${container_name})"
       sh "docker rm \$(docker ps -a -q --filter name=${container_name})"  
       sh "docker rmi ${image_name}"
+      sh "docker image prune -fa"
     } catch (Exception e) {
       echo e.getMessage()
     }
