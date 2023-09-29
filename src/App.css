@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.addBlur {
+    @apply blur-sm hover:blur-sm ease-in duration-300 object-cover w-[1000px] h-[350px] rounded-xl
+}
+
+.deleteBlur {
+    @apply blur-none hover:blur-sm ease-in duration-300 object-cover w-[1000px] h-[350px] rounded-xl
+}
+
+* {
+
+    font-family: 'Urbanist', sans-serif;
+}

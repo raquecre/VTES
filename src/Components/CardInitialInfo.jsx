@@ -9,20 +9,19 @@ const CardInitialInfo = props => {
         isOpen === false ? setIsOpen(true) : setIsOpen(false)
 
     }
-
-
+    
     return (
 
         <div
             data-aos="zoom-in-right"
             data-aos-duration="1500"
 
-            class="relative flex justify-center items-center m-3 
+            className="relative flex justify-center items-center m-2
         sm:flex-col xs:flex-col lg:flex-col"
             onClick={() => setTimeout(showDescription(), 5000)}>
-            <img className="hover:blur-sm ease-in duration-300 object-cover w-[1000px] h-[350px] rounded-xl" src={urlImage} alt="background" />
-            <div class="absolute bg-black/40 p-5 rounded-xl object-cover  ">
-                <p class="text-white font-semibold text-4xl "> {title} </p>
+            <img className={[isOpen ? 'addBlur' : 'deleteBlur']} src={urlImage} alt="background" />
+            <div className="absolute bg-black/60 p-5 rounded-xl object-cover  ">
+                <p className="text-white font-semibold text-4xl "> {title} </p>
 
                 {isOpen &&
                     <div className='ease-in duration-300 text-white text-xl scroll-auto m-5'> {description} </div>}

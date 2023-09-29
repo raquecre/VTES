@@ -1,21 +1,54 @@
 
-import React from "react"
-import { Link } from "react-router-dom"
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 const VTESLink = props => {
-    const { urlWeb, textWeb } = props
+    const { urlWeb, infoWeb, titleWeb, preInfo, urlImage} = props
+
+
+    const [isOpen, setIsOpen] = useState(false)
+
+    function showDescription() {
+        isOpen === false ? setIsOpen(true) : setIsOpen(false)
+
+    }
 
     return (
+        /*   <Link to={urlWeb} target="_blank"></Link> */
 
-        <Link className="hover:text-blue-600 hover:underline text-white flex items-center gap-4 text-3xl pb-4 font-semibold" to={urlWeb} target="_blank" >
+        <div
+            data-aos="zoom-in-right"
+            data-aos-duration="1500"
+            /* data-aos="zoom-in-right"
+            data-aos-duration="1500"
+ */
+            onClick={() => setTimeout(showDescription(), 5000)}
+            className=" text-white relative flex justify-center items-center "
+        >
+            <img className={[isOpen ? 'addBlur' : 'deleteBlur']} src={urlImage} alt="" />
 
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-8 h-8">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
-            </svg>
+            <div className="absolute bg-black/70 rounded-xl object-cover p-3">
 
-            <p> {textWeb} </p>
+                <h3 className=" font-semibold hover:text-4xl duration-300 text-3xl"> {titleWeb} </h3>
+                <p className=' text-sm'>{preInfo}</p>
+                {isOpen &&
+                    <div className='ease-in duration-300 text-white scroll-auto text-left'>
+                        <p className='text-lg '>
+                            {infoWeb}
+                        </p>
+                        <Link target='_blank' to={urlWeb}
+                            className='underline text-blue-600 text-right text-xl
+                            hover:decoration-double hover:text-blue-800'
+                        >
+                            {titleWeb}
+                        </Link>
+                    </div>}
+            </div>
+        </div>
 
-        </Link>
+
+
 
     )
 }

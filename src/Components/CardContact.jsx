@@ -2,9 +2,9 @@ const CardContact = props => {
 
     const { iconTypeContact, textContact } = props
     return (
-        <div className={'flex gap-2 text-3xl text-white font-semibold pt-10 items-center hover:{color}'}>
+        <div className={'flex ml-3 gap-2 text-2xl text-white font-semibold items-center '}>
             {iconTypeContact}
-            <p>{textContact}</p>
+            <h2>{textContact}</h2>
         </div>
     )
 }

@@ -2,14 +2,14 @@ const H1Titles = props => {
     const { h1Title } = props
 
     return (
-        <div
+        <h1
             data-aos="fade-up-right"
             data-aos-duration="1500"
 
-            className="text-3xl text-white p-4 font-semibold"
+            className="text-4xl text-white p-7 font-extrabold underline underline decoration-8 decoration-cyan-700 "
         >
             {h1Title}
-        </div>
+        </h1>
     )
 }
 
