@@ -3,6 +3,7 @@ node {
   def container_name = "vtes-react"
 
   stage('checkout') {
+    cleanWs()
     checkout scm
   }
 
