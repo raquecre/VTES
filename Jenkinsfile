@@ -22,7 +22,7 @@ node {
   }
 
   stage('deploy') {
-    sh "docker compose up -d vtesreact"
+    sh "docker compose up -d --force-recreate vtesreact"
   }
 
   stage('clean images') {
