@@ -1,5 +1,5 @@
 node {
-  def image_name = "vtes-react-image"
+  def image_name = "vtes_vtesreact"
   def container_name = "vtes-react"
 
   stage('checkout') {
