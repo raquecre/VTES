@@ -12,15 +12,16 @@ const Calendar = () => {
             <H1Titles h1Title="Mira las actividades programadas" />
             <div className=" 
             flex justify-center items-center pb-4">
+
                 <iframe
-                    className="rounded-xl 
+                className="rounded-xl 
                 2xl:w-[1500px] 2xl:h-[600px] xl:w-[900px] xl:h-[550px] lg:w-[750px] lg:h-[500px] sm:w-[700px] sm:h-[300px] "
-                    src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%230B8043&ctz=Europe%2FMadrid&showTitle=0&showDate=0&showPrint=0&showNav=1&showCalendars=0&showTz=0&src=ZTIxNmZmNmY5NGYzMjE1N2Y1NjA3ZTRhMzkzMDNkODcxODZlMzYyYmYwYjE5ZjAxZDM4NjgyYmZhOWZhZmFhZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F6BF26"></iframe>
-                    
+                 src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%230B8043&ctz=Europe%2FMadrid&showNav=0&showCalendars=0&showTz=0&showPrint=0&showTitle=0&src=MmY2MTc2OWViYjZhYTVjNTJkYzc0N2NlNmYzNGRlM2M2OTQ2MjNlMzg5N2Y1OWQ1YmEyNzBmZTY3ZmY3YTI0OUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23009688"></iframe>
+                
             </div>
-            <ButtonSub 
-            textBtn="Añade nuestros eventos en tu calendario"
-            urlSub="https://calendar.google.com/calendar/u/0/r?cid=e216ff6f94f32157f5607e4a39303d87186e362bf0b19f01d38682bfa9fafaad@group.calendar.google.com"/>
+            <ButtonSub
+                textBtn="Añade nuestros eventos en tu calendario"
+                urlSub="https://calendar.google.com/calendar/u/0/r?cid=e216ff6f94f32157f5607e4a39303d87186e362bf0b19f01d38682bfa9fafaad@group.calendar.google.com" />
         </div>
     )
 }
