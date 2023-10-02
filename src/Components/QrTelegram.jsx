@@ -1,7 +1,7 @@
-const QrGuarida = () => {
+const QrTelegram = () => {
 
     return (
-        <div className="xl:visible 2xl:visible lg:visible md:hidden xs:visible sm:hidden">
+        <div className="">
 
             <img
                 className="w-[150px]"
@@ -14,4 +14,4 @@ const QrGuarida = () => {
     )
 }
 
-export default QrGuarida
+export default QrTelegram

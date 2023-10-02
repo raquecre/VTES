@@ -1,6 +1,6 @@
 
 
-import QrGuarida from "./Qr"
+import QrTelegram from "./QrTelegram"
 
 import TelegramIcon from "./TelegramIcon"
 
@@ -9,12 +9,14 @@ const Footer = () => {
 
     return (
         <div className=" bg-black/70
-        p-5 mt-20 grid  justify-items-center pb-8">
-            
+        p-5 mt-20 flex gap-20 justify-center pb-8">
+
             <TelegramIcon textTelegram="Únete a nuestra comunidad de Telegram"
-             />
-             <QrGuarida/>
-           
+            />
+            <div className="hidden xl:block md:block lg:block">
+                <QrTelegram />
+            </div>
+
         </div>
     )
 }
