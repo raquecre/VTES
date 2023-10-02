@@ -10,6 +10,10 @@
     @apply blur-none hover:blur-sm ease-in duration-300 object-cover w-[1000px] h-[350px] rounded-xl
 }
 
+.mobileVersion {
+    @apply min-w-[640px]
+}
+
 * {
 
     font-family: 'Urbanist', sans-serif;
