@@ -8,12 +8,14 @@ import Resources from "../Components/Resources"
 const Home = () => {
 
     return (
-        <div className="bg-gradient-to-r from-emerald-800/90 to-teal-800/90 bg-fixed ">
+        <div className="bg-gradient-to-r from-emerald-800/90 to-teal-800/90 bg-fixed">
             <Header nameCommunity="VTES La Guarida" contactUsText="Escríbenos" />
-            <Faqs />
-            <Calendar />
-            <Resources/>
-            <MeetingPlaces />
+            <div className="p-6">
+                <Faqs />
+                <Calendar />
+                <Resources />
+                <MeetingPlaces />
+            </div>
             <Footer />
         </div>
     )
