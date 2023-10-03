@@ -9,7 +9,7 @@ const Calendar = () => {
             data-aos-duration="1500"
 
             className=" flex flex-col justify-center items-center pb-10">
-            <H1Titles h1Title="Mira las actividades programadas" />
+            <H1Titles h1Title="Próximas actividades" />
             <div className=" 
             flex justify-center items-center pb-4">
 
