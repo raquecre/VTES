@@ -1,5 +1,8 @@
 import ButtonSub from "./ButtonSub"
 import H1Titles from "./H1Titles"
+import EventsList from "./Journal"
+
+
 
 const Calendar = () => {
 
@@ -8,8 +11,8 @@ const Calendar = () => {
             data-aos="zoom-in-left"
             data-aos-duration="1500"
 
-            className=" flex flex-col justify-center items-center pb-10">
-            <H1Titles h1Title="Próximas actividades" />
+            className=" flex flex-col justify-center items-center gap-5">
+            <H1Titles h1Title="Próximas actividades" /> 
             <div className=" 
             flex justify-center items-center pb-4">
 
@@ -21,7 +24,8 @@ const Calendar = () => {
             </div>
             <ButtonSub
                 textBtn="Añade nuestros eventos en tu calendario"
-                urlSub="https://calendar.google.com/calendar/u/0/r?cid=e216ff6f94f32157f5607e4a39303d87186e362bf0b19f01d38682bfa9fafaad@group.calendar.google.com" />
+                urlSub="https://calendar.google.com/calendar/u/0/r?cid=2f61769ebb6aa5c52dc747ce6f34de3c694623e3897f59d5ba270fe67ff7a249@group.calendar.google.com" />
+
         </div>
     )
 }

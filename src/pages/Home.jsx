@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div className="bg-gradient-to-r from-emerald-800/90 to-teal-800/90 bg-fixed">
             <Header nameCommunity="VTES La Guarida" contactUsText="Escríbenos" />
-            <div className="p-6">
+            <div className="p-6 xl:p-10">
                 <Faqs />
                 <Calendar />
                 <Resources />
