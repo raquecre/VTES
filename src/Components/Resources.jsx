@@ -6,7 +6,7 @@ const Resources = () => {
 
     return (
         <div className="
-        grid  justify-items-center ml-10 mr-10
+        grid  justify-items-center
         ">
             <H1Titles h1Title="Recursos" />
 
