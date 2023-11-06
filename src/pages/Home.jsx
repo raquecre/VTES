@@ -9,6 +9,7 @@ import Banner from "../Components/Banner"
 const Home = () => {
 
     return (
+
         <div className="bg-gradient-to-r from-emerald-800/90 to-teal-800/90 bg-fixed  ">
             <Header nameCommunity="VTES La Guarida" contactUsText="Escríbenos" />
             <div className="flex  flex-col items-center justify-center">
