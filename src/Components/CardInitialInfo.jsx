@@ -20,10 +20,12 @@ const CardInitialInfo = props => {
                  overflow-hidden scroll-auto overflow-auto rounded-xl"
 
             onClick={() => setTimeout(showDescription(), 5000)}>
+
             <img className={[isOpen ? 'addBlur' : 'deleteBlur']} src={urlImage} alt="background" />
 
             <div className="absolute bg-black/60 p-5 rounded-xl m-3">
                 <p className="text-white font-semibold text-2xl "> {title} </p>
+
 
                 {isOpen &&
                     <div className='ease-in duration-300 text-white text-sm lg:text-lg m-1'> {description} </div>}
