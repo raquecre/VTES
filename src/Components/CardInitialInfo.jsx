@@ -19,7 +19,7 @@ const CardInitialInfo = props => {
             className="relative flex justify-center items-center m-2
         sm:flex-col xs:flex-col lg:flex-col"
             onClick={() => setTimeout(showDescription(), 5000)}>
-            <img className={[isOpen ? 'addBlur' : 'deleteBlur']} src={urlImage} alt="background" />
+            <img className={[isOpen ? 'addBlur' : 'deleteBlur']} src={urlImage} alt="" />
             <div className="absolute bg-black/60 p-5 rounded-xl object-cover  ">
                 <p className="text-white font-semibold text-4xl "> {title} </p>
 
