@@ -1,7 +1,8 @@
+import ItemNavigation from "./ItemNavigation"
 import TelegramIcon from "./TelegramIcon"
 
-const Header = props => {
-    const { nameCommunity } = props
+const Header = () => {
+    
     return (
 
         <div className=" bg-black text-white justify-items-center items-center
@@ -12,15 +13,25 @@ const Header = props => {
             </div>
 
             <p className="font-bold 
-                lg:text-3xl md:text-3xl text-xl ">{nameCommunity}</p>
+                lg:text-3xl md:text-3xl text-xl ">VTES La Guarida</p>
 
-            <div className="hidden xl:block md:block lg:block">
-                <TelegramIcon textTelegram="Comunidad" />
-            </div> 
+           <div className="flex gap-8">
+           <ItemNavigation text="Home" link='/'/>
 
-        </div>
+                <ItemNavigation text="Actividades" link='/nuestras-actividades'/>
+                <ItemNavigation text="Liga" link="/liga-2024-vtesGuarida"/>
+                <ItemNavigation text="Telegram" link="https://t.me/+n7hfNb6ZDII3MTM0" />
+
+
+           </div>
+            
+             {/*    <TelegramIcon textTelegram="Comunidad" /> */}
+            </div>
+
 
     )
 }
 
 export default Header
+
+
