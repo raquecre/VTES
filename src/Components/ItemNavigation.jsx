@@ -6,7 +6,7 @@ const ItemNavigation = props => {
 
      <Link to={link}
 
-     className="text-lg text-white font-extrabold decoration-8 decoration-cyan-700 hover:text-blue-600 "> 
+     className="text-lg text-white font-extrabold decoration-8  hover:text-teal-600 "> 
      
      {text}
      

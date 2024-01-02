@@ -1,10 +1,5 @@
 import Footer from "../Components/Footer"
-
-
-import CardInitialInfo from "../Components/CardInitialInfo"
 import Header from "../Components/Header"
-import VTESLink from "../Components/VTESLink"
-import CardOurActivities from "../Components/CardOurActivities"
 import H1Titles from "../Components/H1Titles"
 
 const OurActivities = () => (
