@@ -21,7 +21,8 @@ const CardInitialInfo = props => {
 
             onClick={() => setTimeout(showDescription(), 5000)}>
 
-            <img className={[isOpen ? 'addBlur' : 'deleteBlur']} src={urlImage} alt="background" />
+            <img className={[isOpen ? 'addBlur' : 'deleteBlur']} src={urlImage} alt="
+            " />
 
             <div className="absolute bg-black/60 p-5 rounded-xl m-3">
                 <p className="text-white font-semibold text-2xl "> {title} </p>

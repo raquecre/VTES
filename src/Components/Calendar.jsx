@@ -7,11 +7,11 @@ import EventsList from "./Journal"
 const Calendar = () => {
 
     return (
-        <div
+        <div id="calendar"
             data-aos="zoom-in-left"
             data-aos-duration="1500"
 
-            className=" flex flex-col justify-center items-center gap-5">
+            className="calendar flex flex-col justify-center items-center gap-5">
             <H1Titles h1Title="Próximas actividades" /> 
             <div className=" 
             flex justify-center items-center pb-4">
