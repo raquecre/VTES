@@ -20,7 +20,8 @@ const journeyJanuary = {
         { id: 12, player: 'Adrián', points: 0 },
         { id: 15, player: 'Dario', points: 0 },
         { id: 2, player: 'Pablos', points: 0 },
-        { id: 3, player: 'Manuel', points: 0 },
+        { id: 3, player: 'Manu', points: 0 },
+        { id: 19, player: 'Rubén', points: 0 },
 
     ],
 
