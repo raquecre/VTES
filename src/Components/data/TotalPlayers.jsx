@@ -18,6 +18,8 @@ const TotalPlayers = [
     { id: 16, player: 'Alejandro', points: 0 },
     { id: 17, player: 'Jorge', points: 0 },
     { id: 18, player: 'Jose Miguel', points: 0 },
+    { id: 19, player: 'Rubén', points: 0 },
+
 ];
 
 export default TotalPlayers
