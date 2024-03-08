@@ -17,7 +17,9 @@ const CardInitialInfo = props => {
             data-aos-duration="1500"
             className="relative flex justify-center items-center m-2
                  sm:flex-col xs:flex-col lg:flex-col
-                 overflow-hidden scroll-auto overflow-auto rounded-xl"
+                 overflow-hidden scroll-auto overflow-auto rounded-xl
+                 h-3/4
+                 "
 
             onClick={() => setTimeout(showDescription(), 5000)}>
 

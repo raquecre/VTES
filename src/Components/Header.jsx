@@ -7,9 +7,9 @@ const Header = () => {
     return (
 
         <div className=" bg-black text-white justify-items-center items-center
-        flex justify-around p-2">
+        flex justify-around">
 
-            <Link to="/" className="rounded-full p-5 flex justify-center w-[150px]  ">
+            <Link to="/" className="rounded-full p-2 flex justify-center w-[150px]  ">
                 <img src="https://i.imgur.com/DryhfYx.png" alt="shop's logo" />
             </Link>
 

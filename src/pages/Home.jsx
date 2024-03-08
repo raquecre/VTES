@@ -10,12 +10,26 @@ const Home = () => {
 
     return (
 
-        <div className="bg-gradient-to-r from-emerald-800/90 to-teal-800/90 bg-fixed  ">
+        <div className="bg-black bg-fixed  ">
             <Header />
             <div className="flex  flex-col items-center justify-center">
-                <Banner />
+                <Banner
+                    title='¡Tardeo de primogénitos!'
+                    date="25 de febrero a las 17:00h"
+                    line1="Nosotros te enseñamos,"
+                    line2="no hace falta que traigas nada"
+                    urlImage="https://i.imgur.com/SmR4FLj.jpg"
+                />
                 <Faqs />
-                <Calendar  />
+                <div className="grid-cols-2">
+                    {/*     <div className=" ">
+                        <p className=" text-white"> Nuestrass Actividades</p>
+                        <p className=" text-white"> Liga Guarida 2023 VTES</p>
+                        <p className=" text-white"> Tareos de primogénitos</p>
+                        <p className=" text-white">Encuentros semanales</p>
+                    </div> */}
+                    <Calendar />
+                </div>
                 <Resources />
                 <MeetingPlaces />
             </div>
