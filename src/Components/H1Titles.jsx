@@ -6,7 +6,7 @@ const H1Titles = props => {
            
 
 
-            className="text-3xl text-white p-7 font-extrabold underline decoration-8 decoration-cyan-700 "
+            className="text-3xl text-white p-7 font-extrabold  decoration-8 decoration-cyan-700 "
 
         >
             {h1Title}
