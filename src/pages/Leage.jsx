@@ -12,7 +12,7 @@ const League = () => {
         <div className="bg-gradient-to-r from-emerald-800/90 to-teal-800/90 bg-fixed  ">
             <Header />
             <div className="flex flex-col items-center justify-center">
-                <H1Titles h1Title="Jornada Activa: Abril" ></H1Titles>
+                <H1Titles h1Title="Jornada Activa: del 15 abril al 31 mayo" ></H1Titles>
                 <div className="grid 
                2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 
                 items-center justify-center gap-10">
