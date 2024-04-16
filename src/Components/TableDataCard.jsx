@@ -10,7 +10,7 @@ const TableDataCard = props => {
                 <th className="p-2 ">Posición</th>
                 <th className="p-2">ID</th>
                 <th className="p-2">Jugador</th>
-                <th className="p-2">Puntuación</th>
+         
             </tr>
 
         {ObjectTableNumber.map((player, index )=>
@@ -18,7 +18,7 @@ const TableDataCard = props => {
                 <th >{index +1}</th>
                 <td >{player.id}</td>
                 <td className="p-3" >{player.player}</td>
-                <td  >{player.points}</td>
+              
             </tr>
         )}    
            
