@@ -19,7 +19,7 @@ const Home = () => {
                 <Faq
                 title="¿Qué es VTES?"
                 description="Es un juego de cartas para 5 personas que te permite imprimir aquellas que no tienes.
-                Los Matusalenes compiten porimponerse frente a los otros. 
+                Los Matusalenes compiten por imponerse frente a los otros. 
                 Para conseguirlo, cada Matusalén se apoyará de una cripta con vampiros para poder desarrollar las acciones en mesa, contando con herramientas de apoyo que se las otorgará el mazo de biblioteca."
                 />
                 <Faq title="¿Quiénes somos?"
