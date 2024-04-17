@@ -21,7 +21,7 @@ const Faq = props => {
         <div
             onClick={() => setTimeout(showDescription(), 5000)}
             className="m-4 p-5 bg-white bg-opacity-80 font-semibold text-xl
-                xl:w-[1200px] lg:w-[900px] sm:w-[700px] w-[450px] 
+            xl:w-[1200px]  lg:w-[900px]  sm:w-[700px]  w-[350px] 
             rounded-xl">
             <div className="flex justify-between items-center">
                 <p className="ease-in duration-300 text-black text-xl m-1">{title}</p>
