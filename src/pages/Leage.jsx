@@ -9,7 +9,7 @@ import journeyApril from "../Components/data/DataPlayers"
 const League = () => {
     return (
 
-        <div className="bg-gradient-to-r from-emerald-800/90 to-teal-800/90 bg-fixed  ">
+        <div className="bg-gray-400 bg-fixed  ">
             <Header />
             <div className="flex flex-col items-center justify-center">
                 <H1Titles h1Title="Jornada Activa: del 15 abril al 31 mayo" ></H1Titles>
@@ -22,6 +22,7 @@ const League = () => {
                   <TableDataCard tableNumber={4} ObjectTableNumber={journeyApril.mesa4} /> 
 
                 </div>
+                <div className="m-5"></div>
                 <H1Titles h1Title="Clasificación" ></H1Titles>
                 <RankingData objectTableNumber={TotalPlayers} />
 

@@ -4,7 +4,7 @@ const RankingData = props => {
     const {objectTableNumber  } = props
 
     return (
-        <table className="text-center  rounded bg-teal-600/60 border-separate border-tools-table-outline border-black border-1 " >
+        <table className="text-center  rounded bg-white/40 border-separate border-tools-table-outline border-black border-1 " >
        
             <tr className="text-xl ">
                 <th className="text-xl p-4">Posición</th>
@@ -17,7 +17,7 @@ const RankingData = props => {
             </tr>
 
         {objectTableNumber.map((player, index )=>
-         <tr className="bg-teal-200 text-lg">
+         <tr className="bg-white text-lg">
                 <th >{index +1}</th>
                 <td className="" >{player.id}</td>
                 <td className="p-1" >{player.player}</td>
