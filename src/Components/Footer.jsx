@@ -9,7 +9,7 @@ const Footer = () => {
 
     return (
         <div className=" bg-black/70
-        p-5 mt-20 flex gap-20 justify-center p-3">
+        p-5 mt-20 flex gap-20 justify-center pb-8">
 
             <TelegramIcon textTelegram="Únete a nuestra comunidad de Telegram"
             />
